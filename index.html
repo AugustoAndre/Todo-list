@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light">
+    <main>
+      <div class="img-background-light"></div>
+      <h1>TODO</h1>
+      <div class="icon-theme">
+        <span class="icon-moon"></span>
+      </div>
+      <form >
+        <input class="hide" id="input_fake" type="text" placeholder="Create a new todo..." />
+        <input id="input" type="text" placeholder="Create a new todo..." />
+        <span class="circle"></span>
+      </form>
+      <div id="task-form">
+        <div id="to-do-list"></div>
+        <div id="task-footer">
+          <ul>
+            <li id="number-items"><span id="number-tasks">0</span> items</li>
+            <li></li>
+            <li id="clear-all" onclick=clearCompleted() >Clear Completed</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/sript.js"></script>
+    
+
+    <!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Augusto André</a>.
+  </div> -->
+  </body>
+</html>

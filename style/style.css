@@ -1,0 +1,274 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution {
+  color: hsl(228, 45%, 44%);
+}
+
+body[class='light'] {
+  --color-bg: hsl(0, 0%, 98%);
+  --border: hsl(234, 39%, 85%);
+  --footer-hover: hsl(237, 14%, 26%);
+  --shadow: rgb(168, 167, 167);
+  --body: hsl(0, 0%, 98%);
+  --letter: hsl(237, 14%, 26%);
+}
+
+body[class='dark'] {
+  --color-bg: hsl(235, 24%, 19%);
+  --border: hsl(237, 14%, 26%);
+  --footer-hover: hsl(236, 33%, 92%);
+  --shadow: hsl(235, 21%, 11%);
+  --body: hsl(235, 21%, 11%);
+  --letter: rgb(168, 167, 167);
+}
+
+body {
+  font-family: 'josefin sans', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body);
+}
+
+.img-background-light {
+  background-image: url('../images/bg-desktop-light.jpg');
+  height: 300px;
+}
+
+.img-background-dark {
+  background-image: url('../images/bg-desktop-dark.jpg');
+  height: 300px;
+}
+
+.icon-moon {
+  background-image: url('../images/icon-moon.svg');
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  top: 85px;
+  right: 435px;
+}
+
+.icon-sun {
+  background-image: url('../images/icon-sun.svg');
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  top: 85px;
+  right: 435px;
+}
+
+h1 {
+  position: absolute;
+  top: 60px;
+  left: 435px;
+  color: #fff;
+  letter-spacing: 15px;
+}
+
+form {
+  position: relative;
+  top: -150px;
+  left: 31.5%;
+  display: inline-block;
+}
+
+#input {
+  width: 500px;
+  height: 55px;
+  border-radius: 3px;
+  border-style: none;
+  padding-left: 60px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  background-color: var(--color-bg);
+  color: var(--letter);
+}
+
+#input:focus{
+  outline: 0;
+}
+
+#input::placeholder {
+  font-weight: 700;
+  color: hsl(236, 9%, 61%);
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+.gradient {
+  background: linear-gradient(to top, hsl(280, 87%, 65%), hsl(192, 100%, 67%));
+}
+
+.checked {
+  background-image: url('../images/icon-check.svg');
+  background-position: center;
+  background-size: 12px;
+  background-repeat: no-repeat;
+}
+
+#task-form {
+  position: relative;
+  top: -120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.to-do-list {
+  background-color: var(--color-bg);
+  width: 500px;
+  height: 55px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-style: none;
+  border-bottom: 1px solid var(--border);
+  padding-left: 60px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 40px 40px -10px var(--shadow);
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--letter);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-bg);
+  width: 500px;
+  border-style: none;
+  box-sizing: border-box;
+  box-shadow: 0px 40px 40px -10px var(--shadow);
+  margin-top: 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 15px 10px;
+  font-size: 12px;
+  text-align: center;
+  color: hsl(236, 9%, 61%);
+}
+
+#number-items {
+  position: absolute;
+  left: 20px;
+}
+
+#clear-all {
+  position: absolute;
+  right: 20px;
+}
+
+li:hover {
+  cursor: pointer;
+  color: var(--footer-hover);
+  font-weight: 700;
+}
+
+#clear-all:hover {
+  cursor: pointer;
+  color: var(--footer-hover);
+}
+
+#number-items:hover {
+  cursor: text;
+  color: hsl(236, 9%, 61%);
+  font-weight: 400;
+}
+
+.icon-theme {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.icon-close {
+  background-image: url('../images/icon-cross.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 30px;
+  width: 15px;
+  height: 15px;
+}
+
+.icon-close:hover {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+@media (max-width: 375px) {
+  #task-form {
+    width: 90%;
+    position: relative;
+  }
+
+  #input{
+    width: 150%;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  form{
+    left:7%;
+  }
+
+  ul{
+    width: 325px;
+    margin-left: 40px;
+  }
+
+  .to-do-list{
+    margin-left: 40px;
+    width: 325px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  #clear-all:hover {
+    cursor: pointer;
+    color: hsl(236, 9%, 61%)
+  }
+
+  #input:focus{
+    outline: 0;
+  }
+
+  h1 {
+    left: 43px;
+    font-size: 28px;
+  }
+
+  
+  .icon-sun {
+    top: 80px;
+    right: 35px;
+  }
+
+  .icon-moon {
+    top: 80px;
+    right: 35px;
+  }
+}

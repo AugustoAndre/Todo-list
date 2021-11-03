@@ -1,0 +1,16 @@
+Seu desafio é desenvolver este aplicativo de tarefas e torná-lo o mais parecido possível com o design.
+
+Você pode usar qualquer ferramenta que desejar para ajudá-lo a completar o desafio. Portanto, se você tem algo que gostaria de praticar, sinta-se à vontade para experimentar.
+
+Seus usuários devem ser capazes de:
+
+Veja o layout ideal para o aplicativo, dependendo do tamanho da tela do dispositivo
+Veja os estados de foco para todos os elementos interativos na página
+Adicionar novos todos à lista
+Marcar todos como completos
+Exclua todos da lista
+Filtrar por todos / ativos / completos todos
+Limpar todas as tarefas concluídas
+Alternar entre os modos claro e escuro
+Bônus: arraste e solte para reordenar os itens da lista
+Baixe o projeto e vá até o arquivo README.md. Isso fornecerá mais detalhes sobre o projeto e ajudará na sua configuração.
